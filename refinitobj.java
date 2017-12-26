@@ -19,3 +19,4 @@ public class refinitobj{
    System.out.print("\nname: "+t2.name+"\ngrade: "+t2.grade+"\n");//initializing object through reference
  }
 };
+//heap memory allocation, stacking
