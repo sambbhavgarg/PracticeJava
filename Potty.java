@@ -6,7 +6,7 @@ System.out.print("BIGBOOP!\n");
 }
 class Doggo extends Animal{
 Doggo()
-{
+{//super is automatically created here if its not.
  System.out.print("BOOP!\n");
 }
 }
