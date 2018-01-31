@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class insert{
+class insert{//default access is public in java
   int id;
   String name;
   float sal;
