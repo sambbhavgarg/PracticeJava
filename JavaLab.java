@@ -7,14 +7,13 @@ class JavaLab
 
     static int checkbig(int a, int b, int c){ //static main ne call kiya hai toh static hoga, if u dont want this to be static
                                       //make an object and phir usse call karo
-    if(a>b){
-      if(a>c)
-        System.out.println( a+ " is the greatest");
-      else
-      System.out.println( + " is the greatest");
+    if(a>b && a>c)
+      System.out.println( a+ " is the greatest");
+    else if(b>a)
+      System.out.println( b+ " is the greatest");
+    else
+      System.out.println( c+ " is the greatest");
     }
-
-  }
 
   public static void main (String args[]){
     int a = 5, b = 6, c = 7;
@@ -266,4 +265,117 @@ class JavaLab{
 //but agar private constructor hai, toh kuch nahi hila sakta.
 //hence jisko class ke naam ke saath uss function ka name pata hain
 //jis function mein constructor return ho raha hai, wohi hila sakta hai.
+
+
+class JavaLab{
+  final void run(){
+    System.out.println("Running!");
+  }
+}
+
+class FastRunner extends JavaLab{
+  void run(){
+    System.out.println("Run faster!");
+  }
+}
+
+class Caller{
+  public static void main(String[] args) {
+    FastRunner obj = new FastRunner();
+    obj.run();
+  }
+}
+
+//cannot override final method by making an object of parent class
+//if class is made private, we violate its reusability, we cannot inherit it.
+//each entity of parent class is part of child class
+//has-a: generalization eg object bana ke use karna
+//is-a: specialization eg inheritance
+
+
+
+class A{
+  public static void fun1(){
+    System.out.println("static");
+  }
+}
+
+class B extends A{
+  public static void fun1(){
+    System.out.println("hiding");
+  }
+}
+
+class JavaLab{
+  public static void main(String[] args) {
+    A.fun1();
+    B.fun1();
+  }
+}
+
+
+class JavaLab{
+  private int a= 1999;
+  private void testing(int a){
+    System.out.println("Hello, "+a);
+  }
+}
+
+class privacc extends JavaLab{
+  public static void main(String[] args) {
+    privacc obj = new privacc();
+    int a = obj.a;
+    obj.testing();
+  }
+}
+
+
+
+class Player{
+  void plays(){
+    System.out.printf("Player is playing ");
+  }
+}
+
+class Cricket_Player extends Player{
+  void plays_cricket(){
+    System.out.println("Cricket");
+  }
+}
+
+class Football_Player extends Player{
+  void plays_football(){
+    System.out.println("Football");
+  }
+}
+
+class Hockey_Player extends Player{
+  void plays_hockey(){
+    System.out.println("Hockey");
+  }
+}
+
+class JavaLab{
+  public static void main(String[] args) {
+    Hockey_Player obj = new Hockey_Player();
+    obj.plays(); obj.plays_hockey();
+  }
+}
+
 */
+
+class Worker{
+  String name;
+  float sal_rate;
+  float ComPay(int hours){
+
+  }
+}
+
+class DailyWorker extends Worker{
+
+}
+
+class SalariedWorker extends Worker{
+
+}
