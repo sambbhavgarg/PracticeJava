@@ -362,20 +362,55 @@ class JavaLab{
   }
 }
 
-*/
+
 
 class Worker{
   String name;
   float sal_rate;
-  float ComPay(int hours){
+  Scanner scan = new Scanner(System.in);
+  float ComPay(int hours){//to compute weekly pay of every Worker
 
   }
 }
 
-class DailyWorker extends Worker{
+class DailyWorker extends Worker{//gets paid on the basis of number of days worked
+  float ComPay(int hours){
+    System.out.println("Enter number of days worked: ");
+    int Days = scan.nextInt();
+    System.out.print("Paycheck: "+(Days*200)+"Rupees.");
+  }
 
 }
 
-class SalariedWorker extends Worker{
+class SalariedWorker extends Worker{//gets paid for 40 hours a week
+  float ComPay(int hours)
+}
 
+//HAS-A, IS-A, upcasting
+
+*/
+
+
+
+class JavaLab{
+  Scanner scan = new Scanner(System.in);
+  public static void main(String[] args) {
+    MakeString obj = new MakeString(); //function ke andar scanner nahi define hoga
+    int stringResult = obj.stringTests("Hello World!");
+    System.out.println("Difference between Strings: "+stringResult);
+  }
+}
+
+class MakeString extends JavaLab{
+  protected int stringTests(String str1){
+    String str = scan.nextLine();
+    str = str.trim();
+    str = str.replace('s','f');
+    System.out.println(str);
+    if(str1 == "fameer")
+      System.out.println("foodie");
+    else
+      System.out.println("Go Java!");
+    return str.compareTo("Hello World!");
+  }
 }
