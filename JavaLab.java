@@ -411,6 +411,8 @@ class MakeString extends JavaLab{
       System.out.println("foodie");
     else
       System.out.println("Go Java!");
+    str.indexOf(str1);
+
     return str.compareTo("Hello World!");
   }
 }
