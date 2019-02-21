@@ -379,40 +379,17 @@ class DailyWorker extends Worker{//gets paid on the basis of number of days work
     int Days = scan.nextInt();
     System.out.print("Paycheck: "+(Days*200)+"Rupees.");
   }
-<<<<<<< HEAD
-=======
 
 }
->>>>>>> 56f3f5845f9d2ec514bbe418b29e3d5c6ec9bbc6
 
 class SalariedWorker extends Worker{//gets paid for 40 hours a week
   float ComPay(int hours)
 }
 
-<<<<<<< HEAD
-class SalariedWorker extends Worker{//gets paid for 40 hours a week
-  float ComPay(int hours)
-}
-
-=======
->>>>>>> 56f3f5845f9d2ec514bbe418b29e3d5c6ec9bbc6
 //HAS-A, IS-A, upcasting
 
-*/
-
-<<<<<<< HEAD
 
 
-class JavaLab{
-  Scanner scan = new Scanner(System.in);
-  public static void main(String[] args) {
-    MakeString obj = new MakeString(); //function ke andar scanner nahi define hoga
-    int stringResult = obj.stringTests("Hello World!");
-    System.out.println("Difference between Strings: "+stringResult);
-  }
-}
-
-=======
 
 
 class JavaLab{
@@ -424,7 +401,6 @@ class JavaLab{
   }
 }
 
->>>>>>> 56f3f5845f9d2ec514bbe418b29e3d5c6ec9bbc6
 class MakeString extends JavaLab{
   protected int stringTests(String str1){
     String str = scan.nextLine();
@@ -435,11 +411,27 @@ class MakeString extends JavaLab{
       System.out.println("foodie");
     else
       System.out.println("Go Java!");
-<<<<<<< HEAD
     str.indexOf(str1);
 
-=======
->>>>>>> 56f3f5845f9d2ec514bbe418b29e3d5c6ec9bbc6
     return str.compareTo("Hello World!");
   }
 }
+
+
+// Final keyword: prevents class from being inherited and a function from being overriden
+//covariant return type
+
+class JavaLab extends A{
+  public static void main(String[] args) {
+    A.funA();
+    B.funA();
+  }
+}
+
+//aap kisi function ke return type ko narrow kar sakte ho wider nahi
+
+*/
+
+//papa ki shakal aapse nahi mil sakti, aapki papa se mil sakti hai, super keyword use kare bina unoverriden methods call: Upcasting.
+//anon. inner class: inline gumnaam class, open block defining abstract functions
+//
