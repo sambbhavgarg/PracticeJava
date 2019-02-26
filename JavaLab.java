@@ -106,7 +106,7 @@ class JavaLab {
     obj.celebrate();
   }
 }
-
+*/
 class JavaLab {
   public static void main(String [] args){
     Scanner scan = new Scanner(System.in);
@@ -133,6 +133,7 @@ class JavaLab {
   }
 }
 
+/*
 class Pnc{
   void PnC(int arr[], int low, int high){
     while(low<=high){
