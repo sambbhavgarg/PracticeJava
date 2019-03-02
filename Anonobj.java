@@ -1,6 +1,6 @@
-import java.util.*;
-class calcie{
- void facto(int n)
+import java.util.Scanner;
+class Calcie{
+ void factorialRet(int n)
  {
   if(n==0)
   System.out.print("Factorial: 1\n");
@@ -13,12 +13,14 @@ class calcie{
   }
  }
 }
-class anonobj{
+class Anonobj{
  public static void main(String []args)
  {
    Scanner scan=new Scanner(System.in);
    System.out.print("Enter a number: ");
    int num=scan.nextInt();
-   new calcie().facto(num);//anonymous object
+   //calcie obj = new calcie();
+   //obj.facto(num);
+   new Calcie().facto(num);//anonymous object
  }
 }
