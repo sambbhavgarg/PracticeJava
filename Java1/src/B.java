@@ -1,7 +1,7 @@
 package p2;
 
 public class B{
-  public static void B(){
+  public void B(){
     System.out.println("Hello from B");
   }
 }
