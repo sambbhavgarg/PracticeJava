@@ -1,7 +1,7 @@
-package bin;
+package p1;
 
-class A{
-  public static void A(){
+public class A{
+  public A(){
     System.out.println("Hello from A");
   }
 }
