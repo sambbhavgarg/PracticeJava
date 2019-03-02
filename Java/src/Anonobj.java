@@ -1,4 +1,6 @@
+package anonobj;
 import java.util.Scanner;
+
 class Calcie{
  void factorialRet(int n)
  {
@@ -21,6 +23,6 @@ class Anonobj{
    int num=scan.nextInt();
    //calcie obj = new calcie();
    //obj.facto(num);
-   new Calcie().facto(num);//anonymous object
+   new Calcie().factorialRet(num);//anonymous object
  }
 }
