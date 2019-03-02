@@ -3,4 +3,3 @@ public class B extends A{//not poss
     System.out.println("funA from B");
   }
 }
-j
