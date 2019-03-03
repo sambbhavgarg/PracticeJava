@@ -1,4 +1,4 @@
-//package bin.covret;
+package bin.covarientret;
 //covariant return type
 class A{
  A get(){
@@ -17,7 +17,7 @@ class covret extends A{
   }
   public static void main(String args[])
   {
-    covret obj = new A();
+    A obj = new covret();
     obj.get();
     //agar return type class name hai toh . operator se access karlo koi bhi method
   }

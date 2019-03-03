@@ -1,3 +1,4 @@
+package bin.covret;
 public class C extends A{
   public static void funA(){
     System.out.println("funA from C");
