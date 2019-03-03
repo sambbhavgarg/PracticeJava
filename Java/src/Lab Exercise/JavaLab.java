@@ -1,7 +1,6 @@
-import java.util.*;
-import java.io.*;
+/*import Java.util.Scanner;
 
-/*
+
 class JavaLab
 {
 
@@ -106,7 +105,7 @@ class JavaLab {
     obj.celebrate();
   }
 }
-*/
+
 class JavaLab {
   public static void main(String [] args){
     Scanner scan = new Scanner(System.in);
@@ -133,7 +132,7 @@ class JavaLab {
   }
 }
 
-/*
+
 class Pnc{
   void PnC(int arr[], int low, int high){
     while(low<=high){
@@ -418,21 +417,10 @@ class MakeString extends JavaLab{
   }
 }
 
-
+*/
 // Final keyword: prevents class from being inherited and a function from being overriden
 //covariant return type
-
-class JavaLab extends A{
-  public static void main(String[] args) {
-    A.funA();
-    B.funA();
-  }
-}
-
 //aap kisi function ke return type ko narrow kar sakte ho wider nahi
-
-*/
-
 //papa ki shakal aapse nahi mil sakti, aapki papa se mil sakti hai, super keyword use kare bina unoverriden methods call: Upcasting.
 //anon. inner class: inline gumnaam class, open block defining abstract functions
 //
