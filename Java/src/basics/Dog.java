@@ -1,19 +1,20 @@
+package bin.basics;
 class Dog
 {
-  String Name();
-  int Age();
-  public Dog(String Name,int age)
+  String Name;
+  int Age;
+  public Dog(String Name,int Age)
   {
-    this.name=Name;
-    this.age=Age;
+    this.Name=Name;
+    this.Age=Age;
   }
   public String getName()
   {
     return Name;
   }
-  public String getAge()
+  public int getAge()
   {
-    return age;
+    return Age;
   }
   @Override
   public String toString()
@@ -22,7 +23,7 @@ class Dog
   }
   public static void main(String args[])
   {
-    Dog tuffy=new Dog("magik",9);
+    Dog tuffy=new Dog("Magik",9);
     System.out.println(tuffy.toString());
   }
 
