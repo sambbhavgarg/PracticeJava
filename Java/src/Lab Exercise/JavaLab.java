@@ -574,20 +574,39 @@ class output
         }
     }
 */
-
 import java.util.ArrayList;
+
+/*
+//AUTPBOXING: Automatic type conversion of primitive types to an object
 
 class JavaLab{//autoboxing
   public static void main(String[] args) {
     char ch = 'a';
-
+    // Autoboxing- primitive to Character object conversion
     Character a = ch;
-
+    //arraylist converts to object
     ArrayList<Integer> arrayList = new ArrayList<Integer>();
 
     arrayList.add(25);
 
     System.out.println(arrayList.get(0));
 
+   }
+}
+
+//Unboxing: Automatic Conversion of an object to its primitive type.
+*/
+
+class JavaLab{//Unboxing
+  public static void main(String[] args) {
+    Character ch = 'a';
+
+    char a = ch;
+
+    ArrayList<Integer> arrayList = new ArrayList<Integer>();
+    arrayList.add(24);
+
+    int num = arrayList.get(0);
+    System.out.println(num);
    }
 }
