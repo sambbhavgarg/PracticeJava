@@ -36,6 +36,10 @@ class JavaLab{
       c = a-b;
       System.out.println("Answer: " + c);
     }
+    else if(args[1].equals("*")){// && galat ho raha tha
+      c = a*b;
+      System.out.println("Answer: " + c);
+    }
     else{
       System.out.println ("Wrong Input");
     }
@@ -417,10 +421,173 @@ class MakeString extends JavaLab{
   }
 }
 
-*/
+
 // Final keyword: prevents class from being inherited and a function from being overriden
 //covariant return type
 //aap kisi function ke return type ko narrow kar sakte ho wider nahi
 //papa ki shakal aapse nahi mil sakti, aapki papa se mil sakti hai, super keyword use kare bina unoverriden methods call: Upcasting.
 //anon. inner class: inline gumnaam class, open block defining abstract functions
 //
+
+class JavaLab
+ {
+     public static void main(String[]args)
+     {
+         String[] elements = { "for", "tea", "too" };
+         String first = (elements.length > 0) ? elements[0]: null;
+         System.out.println(first);
+     }
+ }
+
+
+class A
+ {
+     int i;
+     public void display()
+     {
+         System.out.println(i);
+     }
+ }
+ class B extends A
+{
+     int j;
+     public void display()
+     {
+         System.out.println(j);
+     }
+ }
+ class JavaLab//dynamic dispatch
+{
+     public static void main(String args[])
+     {
+         B obj2 = new B();
+         obj2.i = 1;
+         obj2.j = 2;
+         A r;
+         r = obj2;
+         r.display();
+     }
+}
+
+class A
+{
+int i;
+int j;
+     A()
+     {
+         i = 1;
+         j = 2;
+     }
+}
+class Output
+{
+     public static void main(String args[])
+     {
+          A obj1 = new A();
+          A obj2 = obj1;
+    System.out.print(obj1.equals(obj2));
+     }
+}
+
+class A
+{
+    public int i;
+    protected int j;
+}
+class B extends A
+{
+    int j;
+    void display()
+    {
+  //      super.j = 3;
+        System.out.println(i + " " + j);
+
+        System.out.println(i + " " + super.j);
+    }
+}
+class Output
+{
+    public static void main(String args[])
+    {
+        B obj = new B();
+        obj.i=1;
+        obj.j=2;
+        obj.display();
+    }
+}
+
+class exception_handling
+        {
+            public static void main(String args[])
+            {
+                try
+                {
+                    int a = 1;
+                    int b = 10 / a;
+                    try
+                    {
+                         if (a == 1)
+                             a = a / (a - a);
+                         if (a == 2)
+                         {
+                             int c[] = {1};
+                             c[8] = 9;
+                         }
+                    }
+                    finally
+                    {
+                        System.out.print("A");
+                    }
+                }
+                catch (Exception e)
+                {
+                        System.out.println("B");
+                }
+            }
+        }
+
+
+class output
+    {
+        public static void main(String args[])
+        {
+             String chars[] = {"a", "b", "c", "a", "c"};
+             for (int i = 0; i < chars.length; ++i)
+                 for (int j = i + 1; j < chars.length; ++j)
+                     if(chars[i].compareTo(chars[j]) == 0)
+                         System.out.println("==0 "+chars[i]+" "+chars[j]);
+                     else if (chars[i].compareTo(chars[j]) > 0)
+                         System.out.println(">0 "+chars[i]+" "+chars[j]);
+                     else
+                         System.out.println("<0 "+ chars[i]+" "+chars[j]);
+        }
+      }
+
+
+  class output
+    {
+        public static void main(String args[])
+        {
+           StringBuffer s1 = new StringBuffer("Hello");
+           s1.insert(1,"Java");
+           System.out.println(s1);
+        }
+    }
+*/
+
+import java.util.ArrayList;
+
+class JavaLab{//autoboxing
+  public static void main(String[] args) {
+    char ch = 'a';
+
+    Character a = ch;
+
+    ArrayList<Integer> arrayList = new ArrayList<Integer>();
+
+    arrayList.add(25);
+
+    System.out.println(arrayList.get(0));
+
+   }
+}
