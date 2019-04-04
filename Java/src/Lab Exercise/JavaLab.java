@@ -1,5 +1,4 @@
-/*import Java.util.Scanner;
-
+/*
 
 class JavaLab
 {
@@ -368,33 +367,45 @@ class JavaLab{
 
 
 
-class Worker{
-  String name;
-  float sal_rate;
-  Scanner scan = new Scanner(System.in);
-  float ComPay(int hours){//to compute weekly pay of every Worker
 
+package bin.polymorphism;
+
+import java.util.Scanner;
+
+import bin.polymorphism.Worker;
+import bin.polymorphism.DailyWorker;
+import bin.polymorphism.SalariedWorker;
+
+public class JavaLab{
+  public static void main(String[] args) {
+    Scanner scan = new Scanner(System.in);
+    System.out.println("Enter Profession Type: (w/d/s)");
+    char choice = scan.next().charAt(0);
+    if(choice == 'w')
+      {
+        Worker w = new Worker();
+        w.ComPay();
+      }
+    if(choice == 'd')
+    {
+      Worker d = new DailyWorker();
+      d.ComPay();
+    }
+    if(choice == 's')
+    {
+      Worker s = new SalariedWorker();
+      s.ComPay();
+    }
   }
 }
 
-class DailyWorker extends Worker{//gets paid on the basis of number of days worked
-  float ComPay(int hours){
-    System.out.println("Enter number of days worked: ");
-    int Days = scan.nextInt();
-    System.out.print("Paycheck: "+(Days*200)+"Rupees.");
-  }
 
-}
 
-class SalariedWorker extends Worker{//gets paid for 40 hours a week
-  float ComPay(int hours)
-}
+
+
+
 
 //HAS-A, IS-A, upcasting
-
-
-
-
 
 class JavaLab{
   Scanner scan = new Scanner(System.in);
@@ -573,11 +584,11 @@ class output
            System.out.println(s1);
         }
     }
-*/
+
 import java.util.ArrayList;
 
-/*
-//AUTPBOXING: Automatic type conversion of primitive types to an object
+
+//AUTOBOXING: Automatic type conversion of primitive types to an object
 
 class JavaLab{//autoboxing
   public static void main(String[] args) {
@@ -595,7 +606,7 @@ class JavaLab{//autoboxing
 }
 
 //Unboxing: Automatic Conversion of an object to its primitive type.
-*/
+
 
 class JavaLab{//Unboxing
   public static void main(String[] args) {
@@ -610,3 +621,4 @@ class JavaLab{//Unboxing
     System.out.println(num);
    }
 }
+*/

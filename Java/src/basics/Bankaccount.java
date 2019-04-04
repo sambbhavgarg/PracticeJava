@@ -1,3 +1,4 @@
+package bin.basics;
 import java.util.Scanner;
 class Acclat{
   Scanner scan=new Scanner(System.in);
