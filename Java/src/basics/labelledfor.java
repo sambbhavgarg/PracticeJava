@@ -1,3 +1,4 @@
+package bin.basics;
 public class labelledfor{
  public static void main(String []args)
  {

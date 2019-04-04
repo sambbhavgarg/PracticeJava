@@ -1,3 +1,4 @@
+package bin.basics;
 import java.util.Scanner;
 class grades{
  static public void main(String[] args)

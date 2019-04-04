@@ -1,3 +1,4 @@
+package bin.basics;
 class Helloworld//this should be the same as the file name
 {
  public static void main (String args[])

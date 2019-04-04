@@ -1,3 +1,4 @@
+package bin.basics;
 import java.util.Scanner;
 class info{
   int mark;

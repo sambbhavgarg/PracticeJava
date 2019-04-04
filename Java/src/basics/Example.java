@@ -1,3 +1,4 @@
+package bin.basics;
 class Bike{
 final void run(){System.out.print("biker\n");}
 }

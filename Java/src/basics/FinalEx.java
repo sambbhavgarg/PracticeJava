@@ -1,5 +1,6 @@
+package bin.basics;
 class Bike{
-  final void run(){//cannot be overriden because final 
+  final void run(){//cannot be overriden because final
     System.out.print("Bike starts...\n");}
   }
 class Activa extends Bike {

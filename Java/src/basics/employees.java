@@ -1,3 +1,4 @@
+package bin.basics;
 import java.util.Scanner;
 class insert{//default access is public in java
   int id;

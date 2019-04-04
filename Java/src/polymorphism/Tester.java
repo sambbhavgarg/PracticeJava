@@ -1,18 +1,25 @@
 class Student{
-float getfees(){return 0.0f;}
-
+  float getfees(){
+    return 0.0f;
+  }
 }
+
 class Sam extends Student{
-float getfees(){return 9.34f;}
+  float getfees(){
+    return 9.34f;
+  }
 }
 class Manuel extends Student{
-float getfees(){return 8.4f;}
+  float getfees(){
+    return 8.4f;
+  }
 }
 class Philip extends Student{
-float getfees(){
-return 6.7f;
+  float getfees(){
+    return 6.7f;
+  }
 }
-}
+
 class Tester{
 public static void main(String args[]){
 Student s=new Student();
