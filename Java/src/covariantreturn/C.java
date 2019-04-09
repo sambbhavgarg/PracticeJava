@@ -17,3 +17,7 @@ public class C extends A{
     obj1.funC();
   }
 }
+
+//covarient return type interface ka karne se
+//sirf woh function implement karne hote hain
+//jo dono mein common ho.
