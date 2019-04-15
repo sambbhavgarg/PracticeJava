@@ -1,5 +1,4 @@
 package bin.hackerrank;
-
 import java.util.Scanner;
 
 public class FormatOutput {
