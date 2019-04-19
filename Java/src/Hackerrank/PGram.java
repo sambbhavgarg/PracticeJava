@@ -5,27 +5,35 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
-//class IdharSeBaharException extends Exception{
-//  IdharSeBaharException(String s){
-//  }
-//}
+class OutOfHereException extends Exception{
+ OutOfHereException(String s){
+ }
+}
 
-public class PGram {
-  Scanner scan = new Scanner(System.in);
-  int B = scan.nextInt();
-  int H = scan.nextInt();
-  //if (B>=100 && B<=-100 && H>=100 && H<=-100)
-    //if(B<0 && H<0)
-      //throw IdharSeBaharException("Breadth and height must be positive.");
+public class PGram{
+  static int B, H;
+  static{
+    Scanner scan = new Scanner(System.in);
+    B = scan.nextInt();
+    H = scan.nextInt();
+    if (B<=100 && H<=100 && B>0 && H>0)
+      throw OutOfHereException("Breadth and height must be positive.");
+  }
+
+
   public static void main(String[] args){
-    PGram pg = new PGram();
-		int area=PGram.B*PGram.H;
-		System.out.print(area);
+    try{
+      int area = B*H;
+  		System.out.print(area);
+    } catch(OutOfHereException I){
+      System.out.println("java.lang.Exception: ");
+    }
+
   }//end of main
 }//end of class
 
 //try{
 //
-//}catch(IdharSeBaharException I){
+//}catch(OutOfHereException I){
 //   System.out.println("java.lang.Exception: "+I);
 // }
