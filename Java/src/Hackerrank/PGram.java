@@ -5,10 +5,10 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
-class IdharSeBaharException extends Exception{
-  IdharSeBaharException(String s){
-  }
-}
+// class IdharSeBaharException extends Exception{
+//   IdharSeBaharException(String s){
+//   }
+// }
 
 public class PGram {
   Scanner scan = new Scanner(System.in);
