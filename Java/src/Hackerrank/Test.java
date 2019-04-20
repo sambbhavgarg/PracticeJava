@@ -16,7 +16,11 @@ class Test{
     // String s = i.toString();
     // System.out.println(s+i);
     //-------------------------------------
+    // Calendar c = Calendar.getInstance();
+    // System.out.println("The Current Date is:" + c.getTime());
     Calendar c = Calendar.getInstance();
-    System.out.println("The Current Date is:" + c.getTime());
+    c.setTime(yourDate);
+    int dayOfWeek = c.get(Calendar.DAY_OF_WEEK);
+    new SimpleDateFormat("EE").format(date);
   }
 }
