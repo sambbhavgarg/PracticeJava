@@ -6,8 +6,8 @@ import java.math.*;
 import java.util.regex.*;
 
 class OutOfHereException extends Exception{
- OutOfHereException(String s){
- }
+   OutOfHereException(String s){
+   }
 }
 
 public class PGram{
@@ -25,15 +25,10 @@ public class PGram{
     try{
       int area = B*H;
   		System.out.print(area);
-    } catch(OutOfHereException I){
+    }
+    catch(OutOfHereException I){
       System.out.println("java.lang.Exception: ");
     }
 
   }//end of main
 }//end of class
-
-//try{
-//
-//}catch(OutOfHereException I){
-//   System.out.println("java.lang.Exception: "+I);
-// }
