@@ -7,10 +7,14 @@ public class FormatOutput {
             Scanner sc=new Scanner(System.in);
             System.out.println("================================");
             for(int i=0;i<3;i++){
-                String s1=sc.next();
-                int x=sc.nextInt();
+                String s1 = sc.next();
+                int x = sc.nextInt();
                 String str1 = String.format("%03d",x);
-                System.out.printf("%s%10s\n",s1,str1);
+                int len = s1.length();
+                int sp = 15-len;
+                for(int j=0; j<sp; j++)
+                  s1=s1+" ";
+                System.out.println(s1+str1);
             }
             System.out.println("================================");
 
