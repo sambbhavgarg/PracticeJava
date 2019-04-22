@@ -19,30 +19,19 @@ public class LexicSub {
         int max=0, min=0, flag1=0, flag2=0;
 
         max = st_ar[0].compareTo(st_ar[1]);
-        System.out.println(max);
+        // System.out.println(max);
         min = st_ar[0].compareTo(st_ar[1]);
-        System.out.println(min);
+        // System.out.println(min);
 
         for(int i=1; i<ar_len-1;i++){
-          if(max > st_ar[i].compareTo(st_ar[i+1])){
-            max = st_ar[i].compareTo(st_ar[i+1]);
-            System.out.println(max);
-            flag1 = i;
-            System.out.println(flag1);
-          }
+          .
 
-          if(min < st_ar[i].compareTo(st_ar[i+1])){
-            min = st_ar[i].compareTo(st_ar[i+1]);
-            System.out.println(min);
-            flag2 = i;
-            System.out.println(flag2);
-          }
         }
 
         largest = st_ar[flag1];
-        System.out.println(flag1);
+        // System.out.println(flag1);
         smallest = st_ar[flag2];
-        System.out.println(flag2);
+        // System.out.println(flag2);
 
         return smallest + "\n" + largest;
     }
