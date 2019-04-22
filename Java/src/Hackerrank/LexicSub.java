@@ -24,7 +24,7 @@ public class LexicSub {
         // System.out.println(min);
 
         for(int i=1; i<ar_len-1;i++){
-          .
+          
 
         }
 

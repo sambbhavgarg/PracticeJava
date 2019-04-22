@@ -1,38 +1,11 @@
 package bin.practice;
-interface Divmo{
-  public void division(int a);
-  public void modulus(int b);
-}
-
-class Stud implements Divmo{
-  String name;
-  int div, mod;
-
-  void name(String n){
-    name = n;
-  }
-
-  public void division(int a){
-    div = a;
-  }
-
-  public void modulus(int b){
-    mod = b;
-  }
-
-  void display(){
-
-    System.out.println("Division :" + div);
-    System.out.println("Modulus :" + mod);
-    System.out.println("Name: "+ name);
-  }
-}
-
-class Supply extends Stud{
+import bin.practice.Divmo;
+import bin.practice.Stud;
+class Supply{
 
   public static void main(String args[])
   {
-    Supply s=new Supply();
+    Stud s=new Stud();
     s.name = "Rhitik Krishnani";
     s.division(5);
     s.modulus(15);
