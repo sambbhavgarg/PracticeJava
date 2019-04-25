@@ -1,10 +1,9 @@
 # PracticeJava
 all my java files
 
-for running packaging files in Java/src/packagize from /Java -
-$ javac -d bin src/A.java \n
-$ javac -d bin src/B.java \n
-$ javac -d bin -cp bin src/Test.java
+for running packaging files in PracticeJava -
 
-$ java -cp bin p3.Test
+$ javac -d . src/[file-name].java.
 
+$ javac -d . src/hackerrank/Currency.java
+$ java -cp . bin.hackerrank.Currency
