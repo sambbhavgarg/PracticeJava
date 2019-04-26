@@ -3,9 +3,9 @@ import java.util.Scanner;
 
 public class BubbleSort{
   public BubbleSort(String[] a){
-    System.out.println(a.length+"\n");
-    for(int i=0;i<a.length;i++){
-      for(int j=i+1;j<a.length-1;j++){
+    // System.out.println(a.length+"\n");
+    for(int i=0;i<a.length-1;i++){
+      for(int j=i+1;j<a.length;j++){
         if(a[i].compareTo(a[j])>0){
           String temp = a[i];
           a[i] = a[j];
@@ -13,9 +13,11 @@ public class BubbleSort{
         }
       }
     }
-    for(int i=0; i<a.length; i++){
-      System.out.println(a[i]);
-    }
+    // for(int i=0; i<a.length; i++){
+    //   System.out.println(a[i]);
+    // }
+
+    // System.out.println();
   }
 //   public static void main(String...args){
 //     Scanner scan=new Scanner(System.in);
