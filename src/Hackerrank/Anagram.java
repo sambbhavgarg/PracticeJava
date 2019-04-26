@@ -6,7 +6,9 @@ public class Solution {
       int [] x = new int[26];
       int [] y = new int[26];
 
-      
+      for(int i=0,j=0; i<a.length(); i++){
+         int pos = (int)a.charAt(i);
+      }
     }
 
     public static void main(String[] args) {
