@@ -3,6 +3,9 @@ import java.util.Scanner;
 public class Solution {
 
     static boolean isAnagram(String a, String b) {
+      int [] x = new int[26];
+      int [] y = new int[26];
+
       
     }
 
