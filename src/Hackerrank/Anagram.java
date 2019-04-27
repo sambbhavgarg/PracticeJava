@@ -4,13 +4,14 @@ import java.util.Scanner;
 public class Anagram {
 
     static boolean isAnagram(String a, String b) {
+      boolean fin = true;
       int [] x = new int[26];
       int [] y = new int[26];
       if(a.length() == b.length()){
-        for(int i=0, j=0; i<a.length(); i++){
+        for(int i=0; i<a.length(); i++){
 
            int posa = (int) a.charAt(i);
-           int posb = (int) b.charAt(j);
+           int posb = (int) b.charAt(i);
 
            if(posa>=97 && posb>=97){
             ++x[posa-97];
@@ -22,14 +23,20 @@ public class Anagram {
             ++y[posb-65];
           }
         }
+
         int flag = 0;
+
         for(int i=0; i<x.length-1; i++)
           if(x[i]==y[i]) ++flag;
-        if (flag == 26) return true;
+
+        if (flag == 26) fin = true;
+        else fin = false;
       }
       else
-        return false;
+          fin = false;
+      return fin;
     }
+    //do with hashmaps
 
     public static void main(String[] args) {
 

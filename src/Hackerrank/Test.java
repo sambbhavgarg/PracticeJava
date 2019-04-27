@@ -18,9 +18,30 @@ class Test{
     //-------------------------------------
     // Calendar c = Calendar.getInstance();
     // System.out.println("The Current Date is:" + c.getTime());
-    Calendar c = Calendar.getInstance();
-    c.setTime(yourDate);
-    int dayOfWeek = c.get(Calendar.DAY_OF_WEEK);
-    new SimpleDateFormat("EE").format(date);
+    // Calendar c = Calendar.getInstance();
+    // c.setTime(yourDate);
+    // int dayOfWeek = c.get(Calendar.DAY_OF_WEEK);
+    // new SimpleDateFormat("EE").format(date);
+    //-----------------------------------------
+
+    int n = scanner.nextInt();
+
+    String[] arr = new String[n];
+
+    for (int i = 0; i < n; i++) {
+        String arrItem = scanner.nextLine();
+        arr[i] = arrItem;
+    }
+    int result = gemstones(arr);
   }
+    static int gemstones(String[] arr) {
+      int [] valar = new int[26];
+
+      Arrays.fill(valar, 1);
+
+      for(int i=0; i<arr[i].length-1; i++)
+    }
+
+
+
 }
