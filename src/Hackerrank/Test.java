@@ -39,7 +39,11 @@ class Test{
 
       Arrays.fill(valar, 1);
 
-      for(int i=0; i<arr[i].length-1; i++)
+      for(int i=0; i<arr[i].length; i++){
+        for(int j=0; j<valar.length(); j++){
+          int a = arr[i].indexOf(arr[i].charAt(j);
+        }
+      }
     }
 
 
