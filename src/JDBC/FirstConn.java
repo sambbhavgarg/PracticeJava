@@ -42,6 +42,8 @@ class FirstConn{
         System.out.println(rs.getInt("ID")+" "+rs.getString("NAME")+" "+rs.getString("LNAME"));
       }
       System.out.println("Success");
+      stmt.close();
+      conn.close();
     } catch(Exception e){
       e.printStackTrace();//prints the whole stack of errors
     }
