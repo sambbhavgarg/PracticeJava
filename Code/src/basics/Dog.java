@@ -1,4 +1,4 @@
-package bin.basics;
+package basics;
 class Dog
 {
   String Name;
