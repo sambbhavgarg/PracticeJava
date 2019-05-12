@@ -3,9 +3,9 @@ import java.util.Scanner;
 
 class StudentDB{
   Scanner scan = new Scanner(System.in);
-  String[] name = new String[10];
-  int[] rno = new int[10];
-  public void storeDetails() throws ArrayIndexOutOfBoundsException{
+  String[] name = new String[3];
+  int[] rno = new int[3];
+  public void storeDetails(){
     try{
         for(int i=0; i<=3; i++){
           System.out.print("Enter name of student "+(i+1)+": ");

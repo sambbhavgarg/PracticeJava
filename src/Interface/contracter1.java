@@ -1,3 +1,6 @@
+package bin.interfaces;
+
+
 class contracter1{
    void makeroad(){
     System.out.println("Road is laid");

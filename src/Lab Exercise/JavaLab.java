@@ -1,3 +1,8 @@
+package bin;
+import bin.interfaces.contracter1;
+import bin.interfaces.contracter;
+
+
 /*
 
 class JavaLab
@@ -91,6 +96,7 @@ public class JavaLab extends contracter implements contract{
 
   }
 }//wrong hai yeh
+*/
 
 interface contract {
   void makeroad();
@@ -98,6 +104,8 @@ interface contract {
   void getperm();
   void celebrate();
 }
+
+
 
 class JavaLab {
   public static void main(String[] args) {
@@ -108,6 +116,8 @@ class JavaLab {
     obj.celebrate();
   }
 }
+
+/*
 
 class JavaLab {
   public static void main(String [] args){
