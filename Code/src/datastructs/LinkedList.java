@@ -53,7 +53,7 @@ public class LinkedList {
 			return;
 		}
 		while(temp.next!=null){
-			System.out.println("list: "temp.data+" ");
+			System.out.println("list: "+temp.data+" ");
 			temp = temp.next;
 		}
 	}
