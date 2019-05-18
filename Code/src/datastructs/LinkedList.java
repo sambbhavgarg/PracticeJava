@@ -30,6 +30,7 @@ public class LinkedList {
 	}
 
 	void insertEnd(int new_data){
+
 		Node new_node = new Node(new_data);
 
 		if(head == null){
@@ -42,8 +43,25 @@ public class LinkedList {
 		while(temp.next!=null){
 			temp = temp.next;
 		}
-		temp.next =
+		temp.next = new_node;
 	}
 
+	void printList(){
+		Node temp = head;
+		if(head == null){
+			System.out.println("List Empty.");
+			return;
+		}
+		while(temp.next!=null){
+			System.out.println("list: "temp.data+" ");
+			temp = temp.next;
+		}
+	}
 
+	public static void main(String[] args) {
+		LinkedList list = new LinkedList();
+
+		list.push(5);
+		list.printList();
+	}
 }
