@@ -27,20 +27,24 @@ public class LinkedList {
 		Node new_node = new Node(new_data);
 
 		Node temp = head;
-		System.out.println("Outside while");
+		int flag = 0;
+		//System.out.println("Outside while");
 		while(temp.next.next != null) {
 			temp = temp.next;
-			System.out.println("Inside while");
+			//System.out.println("Inside while");
 			if(temp.next.data == value) {
 				new_node.next = temp.next;
-				temp.next = new_node;
+				temp.next.next = new_node;
+				flag++;
 				return;
 			}
-			else {
-				System.out.println("Entered Node does not exist");
-			}
+
+		}
+		if(flag == 0) {
+			System.out.println("Entered Node does not exist");
 		}
 	}
+	
 	
 	void insertAfter(int value, int new_data){
 		if(head == null){
@@ -104,7 +108,7 @@ public class LinkedList {
 		list.push(56);
 		list.push(34);
 		list.push(50);
-		list.insertAfter(5, 20);
+		list.insertBefore(5, 20);
 		list.insertEnd(67);
 		list.push(6);
 		list.printList();
