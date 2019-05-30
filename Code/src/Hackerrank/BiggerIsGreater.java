@@ -1,7 +1,7 @@
 // import java.io.BufferedReader;
 // import java.io.IOException;
 // import java.io.InputStreamReader;
-package bin.hackerrank;
+package hackerrank;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Arrays;

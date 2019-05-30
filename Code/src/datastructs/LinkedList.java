@@ -34,14 +34,14 @@ public class LinkedList {
 			//System.out.println("Inside while");
 			if(temp.next.data == value) {
 				new_node.next = temp.next;
-				temp.next.next = new_node;
+				temp.next = new_node;
 				flag++;
 				return;
 			}
 
 		}
 		if(flag == 0) {
-			System.out.println("Entered Node does not exist");
+			System.out.println(value + " does not exist for "+new_data+" to be pushed before it.");
 		}
 	}
 	
@@ -56,6 +56,7 @@ public class LinkedList {
 
 		Node temp = head;
 		System.out.println("Outside while");
+		@SuppressWarnings("unused")
 		int flag = 0;
 		while(temp.next.next != null) {
 			temp = temp.next;
@@ -108,9 +109,11 @@ public class LinkedList {
 		list.push(56);
 		list.push(34);
 		list.push(50);
-		list.insertBefore(5, 20);
+//		list.insertBefore(76, 20);
+//		list.insertBefore(56, 110);
 		list.insertEnd(67);
 		list.push(6);
+		list.insertBefore(56, 110);
 		list.printList();
 	}
 }
