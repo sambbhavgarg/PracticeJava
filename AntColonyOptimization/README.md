@@ -14,6 +14,6 @@ randomFactor:
 
 ## Ant.java
 
-visitCity(int currentIndex, int city): ability to visit a specific city
-visited(int i): remember visited cities
-trailLength(double graph[][]): keep track of the trail length
+-visitCity(int currentIndex, int city): ability to visit a specific city
+-visited(int i): remember visited cities
+-trailLength(double graph[][]): keep track of the trail length
