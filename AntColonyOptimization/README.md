@@ -17,3 +17,8 @@ randomFactor:
 - visitCity(int currentIndex, int city): ability to visit a specific city
 - visited(int i): remember visited cities
 - trailLength(double graph[][]): keep track of the trail length
+
+## AntColonyOptimization.java
+
+- AntColonyOptimization(int noOfCities)
+  - Creates a random matrix(graph) of the dim. no.OfCities x no.OfCities.
