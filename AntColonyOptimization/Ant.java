@@ -1,3 +1,7 @@
+// Each Ant will be able to visit a specific city,
+// remember all visited cities,
+// and keep track of the trail length:
+
 public class Ant {
 
 	protected int trailSize;
