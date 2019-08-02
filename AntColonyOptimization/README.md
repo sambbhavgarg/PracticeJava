@@ -4,22 +4,22 @@ ants use pheromones to find the shortest path between home and food source
 pheromones evaporate quickly
 ants prefer to use shorter paths with denser pheromone
 
-c: original number of trails, at the start of the simulation
-alpha: controls the pheromone importance
-beta: controls the distance priority; beta>alpha for better results
-evaporation: percent how much the pheromone is evaporating in every iteration
-Q: information about the total amount of pheromone left on the trail by each Ant
-antFactor: no. of ants used per city
-randomFactor: 
+- c: original number of trails, at the start of the simulation
+- alpha: controls the pheromone importance
+- beta: controls the distance priority; beta>alpha for better results
+- evaporation: percent how much the pheromone is evaporating in every iteration
+- Q: information about the total amount of pheromone left on the trail by each Ant
+- antFactor: no. of ants used per city
+- randomFactor: 
 
-maxIterations = 1000
-'numberOfCities' is an integer
-'numberOfAnts' is an integer
-'graph' is a matrix (double)
-'trails' is a matrix (double)
-'ants' is a reference to an object of ArrayList class, of type List<Ant> Interface 
-'random' is a reference to an object of the Random class in Java
-'probabilities' is a array (double)
+- maxIterations = 1000
+- 'numberOfCities' is an integer
+- 'numberOfAnts' is an integer
+- 'graph' is a matrix (double)
+- 'trails' is a matrix (double)
+- 'ants' is a reference to an object of ArrayList class, of type List<Ant> Interface 
+- 'random' is a reference to an object of the Random class in Java
+- 'probabilities' is a array (double)
 
 ## Ant.java
 
