@@ -34,5 +34,6 @@ ants prefer to use shorter paths with denser pheromone
   - numberOfCities is set
   - number of ants is set and typecasted to integer type
   - trails is set to a similar matrix to that of 'graph'
-  - probabilities is set to an array of double type with size equal to number of       cities.
+  - probabilities is set to an array of double type with size equal to number of     cities.
+  - 
   
