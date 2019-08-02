@@ -12,7 +12,7 @@ Q: information about the total amount of pheromone left on the trail by each Ant
 antFactor: no. of ants used per city
 randomFactor: 
 
-##Ant.java
+#Ant.java
 
 visitCity(int currentIndex, int city): ability to visit a specific city
 visited(int i): remember visited cities
