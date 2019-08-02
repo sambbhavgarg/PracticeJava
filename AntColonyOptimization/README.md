@@ -3,11 +3,17 @@ ACO is a genetic algorithm inspired by an ant’s natural behavior. To fully und
 ants use pheromones to find the shortest path between home and food source
 pheromones evaporate quickly
 ants prefer to use shorter paths with denser pheromone
-Let’s show a simple example of ACO used in the Traveling Salesman Problem. In the following case, we need to find the shortest path between all nodes in the graph:
 
-Parameter c indicates the original number of trails, at the start of the simulation. Furthermore, alpha controls the pheromone importance, while beta controls the distance priority. In general, the beta parameter should be greater than alpha for the best results.
+c: original number of trails, at the start of the simulation
+alpha: controls the pheromone importance
+beta: controls the distance priority; beta>alpha for better results
+evaporation: percent how much the pheromone is evaporating in every iteration
+Q: information about the total amount of pheromone left on the trail by each Ant
+antFactor: no. of ants used per city
+randomFactor: 
 
-Next, the evaporation variable shows the percent how much the pheromone is evaporating in every iteration, whereas Q provides information about the total amount of pheromone left on the trail by each Ant, and antFactor tells us how many ants we’ll use per city.
+##Ant.java
 
-Finally, we need to have a little bit of randomness in our simulations, and this is covered by randomFactor.
-
+visitCity(int currentIndex, int city): ability to visit a specific city
+visited(int i): remember visited cities
+trailLength(double graph[][]): keep track of the trail length
