@@ -12,6 +12,15 @@ Q: information about the total amount of pheromone left on the trail by each Ant
 antFactor: no. of ants used per city
 randomFactor: 
 
+maxIterations = 1000
+'numberOfCities' is an integer
+'numberOfAnts' is an integer
+'graph' is a matrix (double)
+'trails' is a matrix (double)
+'ants' is a reference to an object of ArrayList class, of type List<Ant> Interface 
+'random' is a reference to an object of the Random class in Java
+'probabilities' is a array (double)
+
 ## Ant.java
 
 - visitCity(int currentIndex, int city): ability to visit a specific city
@@ -22,3 +31,8 @@ randomFactor:
 
 - AntColonyOptimization(int noOfCities)
   - Creates a random matrix(graph) of the dim. no.OfCities x no.OfCities.
+  - numberOfCities is set
+  - number of ants is set and typecasted to integer type
+  - trails is set to a similar matrix to that of 'graph'
+  - probabilities is set to an array of double type with size equal to number of       cities.
+  
