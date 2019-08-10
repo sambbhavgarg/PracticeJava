@@ -64,16 +64,19 @@ public class GraphsFirst{
     }
   }
   public static void main(String[] args) {
-    int V = 4;
+    int V = 7;
     Graph graph = new Graph(V);
     // GraphsFirst.addEdge(graph, 0, 1);
     addEdge(graph, 0, 1);
-    addEdge(graph, 0, 2);
-    addEdge(graph, 1, 2);
-    addEdge(graph, 2, 0);
-    addEdge(graph, 2, 3);
+    addEdge(graph, 6, 2);
+    addEdge(graph, 5, 1);
+    addEdge(graph, 3, 1);
+    addEdge(graph, 6, 3);
+    addEdge(graph, 1, 4);
+    addEdge(graph, 2, 5);
     addEdge(graph, 3, 3);
-    // printGraph(graph);
+    addEdge(graph, 4, 6);
+    printGraph(graph);
 
     System.out.print("Breadth-First Search starting from 2: ");
     BFS(graph, 2);
