@@ -37,6 +37,22 @@ public class GraphsFirst{
     }
   }
 
+  static void DFSUtil(Graph graph, int v, boolean visited[]){
+    visited[v] = true;
+    System.out.print(v+" ");
+    Iterator<Integer> i = graph.adjListArray[v].listIterator();
+    while(i.hasNext()){
+      int n = i.next();
+      if(!visited[n]){
+        DFSUtil(graph, n, visited);
+      }
+    }
+  }
+
+  static void DFS(Graph graph, int v){
+    boolean visited[] = new boolean[graph.V];
+    DFSUtil(graph, v, visited);
+  }
   static void printGraph(Graph graph){
     for (int v=0; v<graph.V; v++ ) {
       System.out.print("Adjacency List of "+v);
@@ -48,16 +64,26 @@ public class GraphsFirst{
     }
   }
   public static void main(String[] args) {
-    int V = 5;
+    int V = 4;
     Graph graph = new Graph(V);
+    // GraphsFirst.addEdge(graph, 0, 1);
     addEdge(graph, 0, 1);
-    addEdge(graph, 0, 4);
-    addEdge(graph, 1, 3);
-    addEdge(graph, 2, 4);
-    addEdge(graph, 4, 3);
-    addEdge(graph, 4, 1);
-    printGraph(graph);
-    System.out.print("Breadth-First Search starting from 0: ");
-    BFS(graph, 0);
+    addEdge(graph, 0, 2);
+    addEdge(graph, 1, 2);
+    addEdge(graph, 2, 0);
+    addEdge(graph, 2, 3);
+    addEdge(graph, 3, 3);
+    // printGraph(graph);
+
+    System.out.print("Breadth-First Search starting from 2: ");
+    BFS(graph, 2);
+
+    System.out.println();
+
+    System.out.print("Depth-First Search starting from 2: ");
+    DFS(graph, 2);
+
+    System.out.println();
+
   }
 }
