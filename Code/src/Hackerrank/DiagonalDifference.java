@@ -1,3 +1,4 @@
+package bin.hackerrank;
 import java.io.*;
 import java.math.*;
 import java.security.*;
@@ -14,14 +15,21 @@ class Result {
      * The function accepts 2D_INTEGER_ARRAY arr as parameter.
      */
     public static int diagonalDifference(List<List<Integer>> arr) {
-      
+      int LR_diag = 0, RL_diag = 0;
+      for(int i=0; i<arr.size(); i++){
+        for(int j=0; j<arr.get(i).size(); j++){
+          LR_diag += i==j ? arr.get(i).get(j) : 0;
+          RL_diag += i+j == arr.size()-1 ? arr.get(i).get(j) : 0 ;
+        }
+      }
+      return Math.abs(RL_diag-LR_diag);
     }
 }
 
 public class DiagonalDifference {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        // BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 
         int n = Integer.parseInt(bufferedReader.readLine().trim());
 
@@ -40,13 +48,12 @@ public class DiagonalDifference {
             arr.add(arrRowItems);
         }
 
-        // int result =
-        Result.diagonalDifference(arr);
+        int result = Result.diagonalDifference(arr);
 
-        // bufferedWriter.write(String.valueOf(result));
-        // bufferedWriter.newLine();
+        bufferedWriter.write(String.valueOf(result));
+        bufferedWriter.newLine();
 
         bufferedReader.close();
-        // bufferedWriter.close();
+        bufferedWriter.close();
     }
 }
