@@ -1,5 +1,5 @@
 # Hackerrank Problem Statements
- ## Java
+ ### Java
   - Welcome to Java: https://www.hackerrank.com/challenges/welcome-to-java
   - Java Stdin and Stdout I: https://www.hackerrank.com/challenges/java-stdin-and-stdout-1
   - Java If-Else: https://www.hackerrank.com/challenges/java-if-else
@@ -16,7 +16,7 @@
   - Java Substring Comparisons: https://www.hackerrank.com/challenges/java-string-compare
   - Java String Reverse: https://www.hackerrank.com/challenges/java-string-reverse
   
-  ## Problem Solving
+  ### Problem Solving
   - Solve Me First: https://www.hackerrank.com/challenges/solve-me-first
   - Simple Array Sum: https://www.hackerrank.com/challenges/simple-array-sum
   - Compare the Triplets: https://www.hackerrank.com/challenges/compare-the-triplets
