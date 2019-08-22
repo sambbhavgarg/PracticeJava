@@ -15,7 +15,7 @@
   - Java Substring: https://www.hackerrank.com/challenges/java-substring
   - Java Substring Comparisons: https://www.hackerrank.com/challenges/java-string-compare
   - Java String Reverse: https://www.hackerrank.com/challenges/java-string-reverse
-  
+
   ### Problem Solving
   - Solve Me First: https://www.hackerrank.com/challenges/solve-me-first
   - Simple Array Sum: https://www.hackerrank.com/challenges/simple-array-sum
@@ -28,3 +28,4 @@
   - Time Conversion: https://www.hackerrank.com/challenges/time-conversion
   - Bigger is Greater: https://www.hackerrank.com/challenges/bigger-is-greater
   - Gemstones: https://www.hackerrank.com/challenges/gem-stones
+  - Grading Students: https://www.hackerrank.com/challenges/grading/problem
