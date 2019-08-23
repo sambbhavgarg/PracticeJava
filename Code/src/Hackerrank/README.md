@@ -29,3 +29,5 @@
   - Bigger is Greater: https://www.hackerrank.com/challenges/bigger-is-greater
   - Gemstones: https://www.hackerrank.com/challenges/gem-stones
   - Grading Students: https://www.hackerrank.com/challenges/grading/problem
+  - Apple and Orange: https://www.hackerrank.com/challenges/apple-and-orange
+  - Kangaroo: https://www.hackerrank.com/challenges/kangaroo
