@@ -31,3 +31,4 @@
   - Grading Students: https://www.hackerrank.com/challenges/grading/problem
   - Apple and Orange: https://www.hackerrank.com/challenges/apple-and-orange
   - Kangaroo: https://www.hackerrank.com/challenges/kangaroo
+  - Counting Valleys: https://www.hackerrank.com/challenges/counting-valleys

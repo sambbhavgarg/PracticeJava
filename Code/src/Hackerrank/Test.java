@@ -47,14 +47,26 @@ class Test{
     //   }
     // }
 //--------------------------------------------------------
-  public static void main(String[] args) {
-    String str = "Sambbhav Garg";
-    StringBuilder s = new StringBuilder(str);
-    // for(int i=0; i<str.length(); i++)
-    s.delete(0,5);
-    s.delete(0,2);
-    // System.out.println(str.indexOf('a'));
-    System.out.println(s.toString().indexOf('g'));
-    System.out.println(str instanceof String);
-  }
+ public static void main(String[] args) {
+   String str = "DDUUDDUDUUUD";
+   int n = 12, c = 0, cacheStart = 0, v = 0;
+   int flag;
+   for(int i=0; i<n; i++){
+     if(str.charAt(i) == 'D'){
+       c--;
+     }
+     else if(str.charAt(i) == 'U'){
+       c++;
+     }
+     if(c == 0){
+       StringBuilder s = new StringBuilder(str.substring(cacheStart,i+1));
+       flag = (s.toString().startsWith("D") && s.toString().endsWith("U")) ? 1 : 0;
+       cacheStart = i+1;
+       if(flag == 1){
+          v++;
+        }
+     }
+   }
+   System.out.println(v);
+ }
 }
