@@ -49,8 +49,8 @@ class Test{
 //--------------------------------------------------------
  public static void main(String[] args) {
    String str = "DDUUDDUDUUUD";
-   int n = 12, c = 0, cacheStart = 0, v = 0;
-   int flag;
+   int n = 12,
+   int flag, c = 0, cacheStart = 0, v = 0;
    for(int i=0; i<n; i++){
      if(str.charAt(i) == 'D'){
        c--;
