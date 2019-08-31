@@ -47,26 +47,30 @@ class Test{
     //   }
     // }
 //--------------------------------------------------------
+ // public static void main(String[] args) {
+ //   String str = "DDUUDDUDUUUD";
+ //   int n = 12,
+ //   int flag, c = 0, cacheStart = 0, v = 0;
+ //   for(int i=0; i<n; i++){
+ //     if(str.charAt(i) == 'D'){
+ //       c--;
+ //     }
+ //     else if(str.charAt(i) == 'U'){
+ //       c++;
+ //     }
+ //     if(c == 0){
+ //       StringBuilder s = new StringBuilder(str.substring(cacheStart,i+1));
+ //       flag = (s.toString().startsWith("D") && s.toString().endsWith("U")) ? 1 : 0;
+ //       cacheStart = i+1;
+ //       if(flag == 1){
+ //          v++;
+ //        }
+ //     }
+ //   }
+ //   System.out.println(v);
+ //---------------------------------------------------------------
  public static void main(String[] args) {
-   String str = "DDUUDDUDUUUD";
-   int n = 12,
-   int flag, c = 0, cacheStart = 0, v = 0;
-   for(int i=0; i<n; i++){
-     if(str.charAt(i) == 'D'){
-       c--;
-     }
-     else if(str.charAt(i) == 'U'){
-       c++;
-     }
-     if(c == 0){
-       StringBuilder s = new StringBuilder(str.substring(cacheStart,i+1));
-       flag = (s.toString().startsWith("D") && s.toString().endsWith("U")) ? 1 : 0;
-       cacheStart = i+1;
-       if(flag == 1){
-          v++;
-        }
-     }
-   }
-   System.out.println(v);
+   List<Integer> a = [2,4];
+   List<Integer> b = [16, 32, 96];
  }
 }
