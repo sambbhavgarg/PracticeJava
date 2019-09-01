@@ -1,5 +1,8 @@
 package bin.hackerrank;
 import java.util.*;
+import bin.customath.LCMGCD;
+import java.util.Iterator;
+
 
 class Test{
   // public static void main(String[] args) {
@@ -70,7 +73,8 @@ class Test{
  //   System.out.println(v);
  //---------------------------------------------------------------
  public static void main(String[] args) {
-   List<Integer> a = [2,4];
-   List<Integer> b = [16, 32, 96];
+   int [] arr = new int[]{5, 16, 19, 38, 65};
+     final int LCM = LCMGCD.lcm(arr, 5);
+     System.out.println(LCM);
  }
 }

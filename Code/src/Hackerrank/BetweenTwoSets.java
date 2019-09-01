@@ -1,4 +1,6 @@
+package bin.hackerrank;
 import java.io.*;
+import bin.customath.LCMGCD;
 import java.math.*;
 import java.security.*;
 import java.text.*;
@@ -21,37 +23,31 @@ class Result {
      *  2. INTEGER_ARRAY b
      */
 
-    public static int getTotalX(List<Integer> a, List<Integer> b) {
-      Iterator<Integer> ai = a.iterator();
-      Iterator<Integer> bi = b.iterator();
+    public static void getTotalX(List<Integer> a, List<Integer> b) {
+      // Iterator<Integer> ai = a.iterator();
+      // Iterator<Integer> bi = b.iterator();
+      int LCM = LCMGCD.forList(a, false);
+      int GCD = LCMGCD.forList(b, true);
+      System.out.println(LCM+" "+GCD);
     }
 }
 
-public class Solution {
+public class BetweenTwoSets {
     public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+        List<Integer> l1 = new ArrayList<Integer>();
+        List<Integer> l2 = new ArrayList<Integer>();
+        l1.add(2);
+        l1.add(4);
+        l2.add(16);
+        l2.add(32);
+        l2.add(96);
 
-        String[] firstMultipleInput = bufferedReader.readLine().replaceAll("\\s+$", "").split(" ");
+        Result.getTotalX(l1, l2);
 
-        int n = Integer.parseInt(firstMultipleInput[0]);
-
-        int m = Integer.parseInt(firstMultipleInput[1]);
-
-        List<Integer> arr = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
-            .map(Integer::parseInt)
-            .collect(toList());
-
-        List<Integer> brr = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
-            .map(Integer::parseInt)
-            .collect(toList());
-
-        int total = Result.getTotalX(arr, brr);
-
-        bufferedWriter.write(String.valueOf(total));
-        bufferedWriter.newLine();
-
-        bufferedReader.close();
-        bufferedWriter.close();
+        // bufferedWriter.write(String.valueOf(total));
+        // bufferedWriter.newLine();
+        //
+        // bufferedReader.close();
+        // bufferedWriter.close();
     }
 }
