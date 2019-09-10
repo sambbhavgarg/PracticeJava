@@ -13,7 +13,7 @@ public class HashMapDemo {
 		hm.put("Ansh","Agrawal");
 		hm.put("Suvrat","Jain");
 		hm.put("Saurabh","Aggarwal");
-		hm.put("Aaryash","Raj Sinha");
+		hm.put("Aaryash","Raj");
 		System.out.println(hm.keySet());
 		System.out.println(hm.get("Sambbhav"));
 		System.out.println(hm.get("Samarth"));
