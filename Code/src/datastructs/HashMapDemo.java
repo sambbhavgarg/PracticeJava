@@ -12,7 +12,7 @@ public class HashMapDemo {
 		hm.put("Sumer","Chandra");
 		hm.put("Ansh","Agrawal");
 		hm.put("Suvrat","Jain");
-		hm.put("Saurabh","Aggarwal");
+		hm.put("Saurabh","Aggrwal");
 		hm.put("Aaryash","Raj");
 		System.out.println(hm.keySet());
 		System.out.println(hm.get("Sambbhav"));
